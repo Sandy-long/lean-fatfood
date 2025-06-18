@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <title>认识食用油</title>
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+  <script>
+    mermaid.initialize({ startOnLoad: true });
+  </script>
+  <style>
+    body {
+      font-family: "Microsoft YaHei", sans-serif;
+      background-color: #fefefe;
+      color: #333;
+      line-height: 1.7;
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 2rem;
+    }
+    h1 {
+      text-align: center;
+      border-left: none;
+      padding-left: 0;
+      color: #2c3e50;
+      margin-top: 2rem;
+    }
+    h2 {
+      color: #2c3e50;
+      border-left: 6px solid #3498db;
+      padding-left: 10px;
+      margin-top: 2rem;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1rem 0;
+    }
+    th, td {
+      border: 1px solid #ccc;
+      padding: 0.75rem;
+      text-align: center;
+    }
+    th {
+      background-color: #ecf0f1;
+    }
+    .mermaid {
+      margin: 2rem 0;
+      background-color: #fafafa;
+      border: 1px solid #ddd;
+      padding: 1rem;
+      border-radius: 8px;
+    }
+    ul {
+      margin: 0 0 1rem 1.5rem;
+    }
+    @media screen and (max-width: 768px) {
+      body {
+        padding: 2rem;
+      }
+      table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<h1>认识食用油</h1>
+
+<div class="mermaid">
+timeline
+    title 油脂认知演变史
+    1961 : "切除所有油脂 → 全盘否定"
+    1984 : "饱和脂肪是坏蛋 → 片面认知"
+    1999 : "胆固醇无害 → 初步修正"
+    2014 : "糖比脂肪危险 → 认知反转"
+    2022 : "警惕反式脂肪 → 精准防控"
+</div>
+
+<h2>一、食用油科学分类与特性</h2>
+<div class="mermaid">
+graph LR
+    A[食用油] --> B[动物油]
+    A --> C[植物油]
+    B -->|猪油<br>牛油<br>椰子油| D[饱和脂肪酸]
+    C --> E[单不饱和] -->|橄榄油<br>山茶油<br>牛油果油| F(ω-9)
+    C --> G[多不饱和] -->|花生油/大豆油<br>玉米油/葵花籽油| H(ω-6)
+    G --> |深海鱼油/亚麻籽油<br>藻油/紫苏油|I(ω-3)
+</div>
+
+<h2>二、脂肪酸食用配比</h2>
+<div class="mermaid">
+pie
+    title ω-3/6/9
+    "ω-9单不饱和脂肪酸" : 60
+    "ω-6多不饱和脂肪酸" : 20
+    "ω-3多不饱和脂肪酸" : 15
+    "饱和脂肪酸" : 5
+</div>
+
+<p><strong>根据 WHO 和 FDA 等国际权威营养指南，成年人每日膳食中脂肪酸的理想摄入比例为：</strong></p>
+<ul>
+  <li><strong>ω-9 单不饱和脂肪酸：</strong>约占总脂肪摄入的 60%，主要来自橄榄油、牛油果油等，有助于降血脂、保护心血管。</li>
+  <li><strong>ω-6 多不饱和脂肪酸：</strong>控制在 20% 左右，常见于大豆油、玉米油、葵花籽油，虽为必需脂肪酸，但过量可能促炎。</li>
+  <li><strong>ω-3 多不饱和脂肪酸：</strong>建议摄入 15%，主要存在于亚麻籽油、紫苏油、深海鱼油，具有抗炎、护脑作用。</li>
+  <li><strong>饱和脂肪酸：</strong>应限制在 5% 以内，多见于椰子油、动物油，虽供能稳定，但摄入过多可能影响血脂。</li>
+</ul>
+<h2>三、常用油脂特点</h2>
+<table>
+  <thead>
+    <tr>
+      <th>食用油</th>
+      <th>主要脂肪酸比例</th>
+      <th>其他特点</th>
+      <th>适用烹饪方式</th>
+      <th>注意事项</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>橄榄油</td>
+      <td>单不饱和脂肪酸约80%</td>
+      <td>含丰富橄榄多酚，抗氧化</td>
+      <td>凉拌、低温烹饪</td>
+      <td>避免高温长时间加热</td>
+    </tr>
+    <tr>
+      <td>椰子油</td>
+      <td>饱和脂肪酸约92%</td>
+      <td>耐高温稳定</td>
+      <td>煎炸、高温炒菜</td>
+      <td>长期大量摄入饱和脂肪需谨慎</td>
+    </tr>
+    <tr>
+      <td>亚麻籽油</td>
+      <td>ω-3脂肪酸超50%</td>
+      <td>需避光冷藏，易氧化</td>
+      <td>冷拌、佐餐</td>
+      <td>不耐高温，勿加热</td>
+    </tr>
+    <tr>
+      <td>花生油</td>
+      <td>ω-6： 30-35%<br>ω-9： 40-50%</td>
+      <td>精炼花生油烟点225–230°C</td>
+      <td>煎炸、炒菜</td>
+      <td>长期高量使用可促炎</td>
+    </tr>
+    <tr>
+      <td>大豆油</td>
+      <td>ω-6： 50-55%<br>ω-9： 23-25%<br>ω-3： 7-8%</td>
+      <td>含一定ω-3，营养较均衡</td>
+      <td>炒菜</td>
+      <td>过量ω-6可能促炎，建议适量</td>
+    </tr>
+    <tr>
+      <td>玉米油</td>
+      <td>ω-6： 55-60%<br>ω-9： 25%</td>
+      <td>ω-3含量极低，促炎性较强</td>
+      <td>炒菜</td>
+      <td>建议限制用量，注意补充ω-3</td>
+    </tr>
+    <tr>
+      <td>葵花籽油</td>
+      <td>ω-6： 60-70%<br>ω-9： 10-20%</td>
+      <td>高ω-6，促炎风险较大</td>
+      <td>炒菜</td>
+      <td>建议偶尔使用，控制摄入量</td>
+    </tr>
+    <tr>
+      <td>紫苏油</td>
+      <td>ω-3（α-亚麻酸）55–60%</td>
+      <td>抗炎护脑，富含ω-3</td>
+      <td>冷拌、佐餐</td>
+      <td>不耐高温，勿加热</td>
+    </tr>
+  </tbody>
+</table>
+<h2>四、油脂搭配参考方案</h2>
+<table>
+  <thead>
+    <tr>
+      <th>油种 / 食物</th>
+      <th>推荐比例</th>
+      <th>脂肪酸贡献</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>橄榄油</td>
+      <td>50%</td>
+      <td>提供 ω-9</td>
+    </tr>
+    <tr>
+      <td>花生油</td>
+      <td>20%</td>
+      <td>ω-6 与 ω-9 均衡，烟点高适合炒菜</td>
+    </tr>
+    <tr>
+      <td>亚麻籽油</td>
+      <td>15%</td>
+      <td>高 ω-3</td>
+    </tr>
+    <tr>
+      <td>奇亚籽 / 鱼油</td>
+      <td>10–15%</td>
+      <td>增补额外 ω-3</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="note">
+  <strong>特点：</strong>兼顾口感和脂肪酸平衡，适合追求风味但又关注健康的人群。可用于家庭炒菜、冷拌与生食搭配。
+</div>
+
+<h2>五、配比失衡预警信号</h2>
+<table>
+  <thead>
+    <tr>
+      <th>类型</th>
+      <th>典型表现</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>ω-6 过量</strong></td>
+      <td>
+        <p>皮肤易过敏</p>
+        <p>伤口愈合缓慢</p>
+        <p>慢性炎症反复</p>
+      </td>
+    </tr>
+    <tr>
+      <td><strong>ω-3 不足</strong></td>
+      <td>
+        <p>记忆力减退</p>
+        <p>眼睛干涩疲劳</p>
+        <p>情绪波动明显</p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+
+
+<h2>六、常见误区</h2>
+<ul>
+  <li>❌ 橄榄油不能加热 → ✅ 中温以下炒菜安全</li>
+  <li>❌ 所有植物油都健康 → ✅ ω-6 过量也促炎</li>
+  <li>❌ 动物油完全不能吃 → ✅ 适量有益，供能稳定</li>
+</ul>
+<h2>参考文献</h2>
+<ol>
+  <li>
+    World Health Organization. <em>Diet, Nutrition and the Prevention of Chronic Diseases: Report of a Joint WHO/FAO Expert Consultation.</em> WHO Technical Report Series 916, 2003. (WHO出版)
+  </li>
+  <li>
+    U.S. Food and Drug Administration. <em>Final Determination Regarding Partially Hydrogenated Oils.</em> FDA, 2015.
+  </li>
+  <li>
+    <em>Dietary fats and cardiovascular disease: A presidential advisory from the American Heart Association.</em> Circulation, 136(3): e1–e23, 2017.
+  </li>
+  <li>
+    <em>Association of animal and plant protein intake with all-cause and cause-specific mortality.</em> JAMA Internal Medicine, 176(10): 1453–1463, 2016.
+  </li>
+  <li>
+    <em>Dietary fat and coronary heart disease: Summary of evidence from RCTs.</em> BMJ, 368: m320, 2020.
+  </li>
+  <li>
+    Harvard School of Public Health. <em>Fats and Cholesterol – The Good, the Bad, and the Healthy Diet.</em> Harvard T.H. Chan School of Public Health, 2024.
+  </li>
+</ol>
+</body>
+</html>
